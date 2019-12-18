@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST", action="/new")
+    div.input
+      label(for="author") Author
+      input(type="text", name="author")
+    div.input
+      label Message
+      input(type="text", name="messageText")
+    button(type="submit") Submit
+  a(href="/") Go back

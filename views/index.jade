@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  ul 
+    each msg in messages
+      li=msg.user + ': ' + msg.text + '. ' + msg.added
+  a(href="/new") Add new message
